@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@1,1;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg , #cbd0d7 , #ffffff);
+    padding: 10px;
+}
+
+.todo{
+    width: 100%;
+    background-color: #fff;
+    max-width: 540px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 3px #cbd0d7;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+
+}
+
+.todo .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo .text h2{
+    color: #1d1e20;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+
+.input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+
+}
+
+
+.input button{
+    border: none;
+    outline: none;
+    background-color: #1d1e20;
+    color: #fff;
+    padding: 16px 50px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input button:hover{
+    background-color: #000000;
+}
+
+
+.input input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    border-bottom: 1px solid #ededed ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li::after{
+    position: absolute;
+    content: '';
+    background: url(images/circle.png);
+    background-position: center;
+    background-size: cover;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    left: 15px;
+    top: 14px;
+}
+
+ul li  i{
+    transition: 0.3s;
+}
+
+
+ul li  i:hover{
+    color: red;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+
+
+ul li.checked::after{
+    background: url(images/checked.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.input input,#list{
+    font-family: 'Sofia Sans', sans-serif;  
+}
