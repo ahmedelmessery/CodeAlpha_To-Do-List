@@ -131,3 +131,19 @@ ul li.checked::after{
 .input input,#list{
     font-family: 'Sofia Sans', sans-serif;  
 }
+
+
+@media only screen and (max-width: 768px) {
+    
+     .todo{
+        box-shadow: 0 0 7px 0px #cbd0d7;
+     }
+     .input button{
+        padding: 10px 20px;
+     }
+
+     .input input{
+        font-size: 12px;
+     }
+    
+  }
